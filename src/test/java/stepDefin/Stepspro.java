@@ -2,7 +2,6 @@ package stepDefin;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -18,7 +17,7 @@ public class Stepspro {
 	
 	@Given("User launch chromebrowser")
 	public void launchbrowser(){
-		System.setProperty("webdriver.chrome.driver","chromedriver1.exe");
+		System.setProperty("webdriver.chrome.driver","C://driver//chromedriver.exe");
 		driver= new ChromeDriver();
 		sg=new Signuppage(driver);
 	}
